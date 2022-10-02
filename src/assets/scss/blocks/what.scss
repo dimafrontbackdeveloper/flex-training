@@ -1,0 +1,36 @@
+.what {
+  padding: 20px 0px;
+  .what__row {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    @include breakpoint(768px) {
+      flex-wrap: wrap;
+    }
+    .what__img {
+      flex: 0 0 430px;
+      @include breakpoint(425px) {
+        flex: 1 1 auto;
+        max-width: 425px;
+        margin-bottom: 30px;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .what__describe {
+      max-width: 650px;
+      .what__title {
+        margin-bottom: 20px;
+      }
+      .what__text {
+        p {
+          margin-bottom: 10px;
+          &:last-child {
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
+  }
+}

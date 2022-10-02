@@ -1,0 +1,46 @@
+.header {
+  background-color: #445162;
+  padding: 20px 0px;
+
+  .header__row {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    @include breakpoint(768px) {
+      flex-wrap: wrap;
+    }
+    .header__describe {
+      color: #fff;
+      @include breakpoint(768px) {
+        margin-bottom: 40px;
+      }
+      .header__title {
+        font-size: 44px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        @include breakpoint(768px) {
+          font-size: 34px;
+        }
+      }
+      .header__text {
+        font-size: 20px;
+        ul {
+          li {
+            padding-left: 30px;
+            background: url('../images/check-icon.png') left top no-repeat;
+            margin-bottom: 13px;
+            &:last-child {
+              margin-bottom: 0px;
+            }
+          }
+        }
+      }
+    }
+    .header__img {
+      max-width: 470px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

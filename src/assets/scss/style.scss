@@ -1,0 +1,24 @@
+// обнуление стилей
+@import './reset.scss';
+
+// миксины
+@import './_mixins.scss';
+
+// контейнер
+@import './container.scss';
+
+// оболочка
+@import './wrapper.scss';
+
+// контент
+@import './content.scss';
+
+// глобальные стили
+@import './global.scss';
+
+// блоки
+@import './blocks/header.scss';
+@import './blocks/what.scss';
+@import './blocks/columns.scss';
+@import './blocks/vertical.scss';
+@import './blocks/footer.scss';
